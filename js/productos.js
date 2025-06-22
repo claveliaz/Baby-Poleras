@@ -34,21 +34,10 @@ const PRODUCTOS = [
         soldOut: false
     },
     {
-        id: 3,
+        id: 4,
         nombre: "Polera LA Azul",
         precio: 270,
         descripcion: "Polera Azulconfeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
-        imagen: "imagenes/LA.jpeg",
-        imagenes: [
-            "imagenes/LA.jpeg",
-        ],
-        soldOut: false
-    },
-    {
-        id: 4,
-        nombre: "Polera Básica ",
-        precio: 270,
-        descripcion: "Polera Básica confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
         imagen: "imagenes/LA.jpeg",
         imagenes: [
             "imagenes/LA.jpeg",
