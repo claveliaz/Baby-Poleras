@@ -28,6 +28,7 @@ function renderProductos(productos) {
     const img = document.createElement('img');
     img.src = `assets/${producto.imagen}`;
     img.alt = producto.nombre;
+    img.loading = 'lazy';
     imgWrap.appendChild(img);
     if (producto.soldOut) {
       const sold = document.createElement('div');
@@ -80,7 +81,7 @@ function inicializarPaginaProducto() {
     // Agregar la imagen principal como primera miniatura
     const miniatura = document.createElement('div');
     miniatura.className = 'producto-miniatura active';
-    miniatura.innerHTML = `<img src="assets/${producto.imagen}" alt="${producto.nombre}">`;
+    miniatura.innerHTML = `<img src="assets/${producto.imagen}" alt="${producto.nombre}" loading="lazy">`;
     miniatura.onclick = () => cambiarImagenPrincipal(`assets/${producto.imagen}`);
     miniaturas.appendChild(miniatura);
   }
@@ -185,7 +186,7 @@ function renderCarrito() {
     div.className = 'carrito-item';
     div.innerHTML = `
       <div class="carrito-item-info">
-        <img src="assets/${item.imagen}" alt="${item.nombre}">
+        <img src="assets/${item.imagen}" alt="${item.nombre}" loading="lazy">
         <div class="carrito-item-detalles">
           <h3 class="dm-mono">${item.nombre}</h3>
           <p class="dm-mono">$${item.precio.toLocaleString('es-MX')} MXN</p>
@@ -338,7 +339,7 @@ function actualizarCarrito() {
     const itemElement = document.createElement('div');
     itemElement.className = 'carrito-item';
     itemElement.innerHTML = `
-      <img src="assets/${item.imagen}" alt="${item.nombre}">
+      <img src="assets/${item.imagen}" alt="${item.nombre}" loading="lazy">
       <div class="item-info">
         <h4 class="dm-mono">${item.nombre}</h4>
         <p class="dm-mono">$${item.precio} MXN x ${item.cantidad}</p>
@@ -397,7 +398,7 @@ function inicializarPaginaCarrito() {
       subtotal += item.precio * item.cantidad;
       const itemHTML = `
         <div class="carrito-detalle-item">
-          <img src="assets/${item.imagen}" alt="${item.nombre}">
+          <img src="assets/${item.imagen}" alt="${item.nombre}" loading="lazy">
           <div class="item-info">
             <h3 class="dm-mono">${item.nombre}</h3>
             <p class="neue-plank">$${item.precio.toLocaleString('es-MX')} MXN</p>

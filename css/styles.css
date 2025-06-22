@@ -1895,4 +1895,39 @@ main {
 .producto-detalle {
   animation: fadeIn 1s ease-out forwards;
   animation-delay: 0.3s;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 8vw; /* Aumentar tamaño en pantallas más pequeñas */
+    letter-spacing: 5px !important;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
+    gap: 24px;
+  }
+
+  .producto-card h3 {
+    font-size: 1em;
+  }
+
+  .producto-card p {
+    font-size: 0.9em;
+  }
+
+  .menu-central {
+    display: none; /* Opcional: podrías implementar un menú hamburguesa aquí */
+  }
+
+  .carrito-container {
+    grid-template-columns: 1fr; /* Apilar en móvil */
+  }
+}
+
+@media (max-width: 480px) {
+  .productos-grid {
+    grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+  }
 } 
