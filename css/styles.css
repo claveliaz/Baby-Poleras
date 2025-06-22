@@ -33,7 +33,7 @@ body, html {
   font-weight: 900;
   letter-spacing: 3px;
   color: #fff;
-  opacity: 0.55;
+  opacity: 1;
   text-align: center;
   text-transform: uppercase;
   font-size: 15px;
@@ -1892,8 +1892,8 @@ main {
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
   .hero-text h1 {
-    font-size: 8vw; /* Aumentar tamaño en pantallas más pequeñas */
-    letter-spacing: 5px !important;
+    font-size: 3rem;
+    line-height: 1.2;
   }
 
   .productos-grid {
@@ -1919,6 +1919,11 @@ main {
 }
 
 @media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
   .productos-grid {
     grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
   }
