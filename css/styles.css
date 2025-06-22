@@ -1865,4 +1865,34 @@ body {
   height: 100vh;
   text-align: center;
   animation: fadeIn 1s;
+}
+
+main {
+  animation-delay: 0.3s;
+}
+
+.hero-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+  font-size: 5vw; /* Se ajusta al ancho de la pantalla */
+  letter-spacing: 10px !important;
+  text-transform: uppercase;
+  opacity: 1 !important;
+}
+
+.producto-detalle {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
 } 
