@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Baby Poleras</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="premium-bar">
+      <div class="logo-graphic">
+        <a href="index.html">
+          <img src="assets/imagenes/BP.png" alt="Logo Baby Poleras"/>
+        </a>
+      </div>
+      <div class="menu-central">
+        <a href="index.html" class="dm-mono">INICIO</a>
+        <a href="tienda.html" class="active dm-mono">TIENDA</a>
+        <a href="contacto.html" class="dm-mono">CONTACTO</a>
+      </div>
+      <div class="iconos-barra">
+        <a href="comprar.html" class="icon-cart" id="cart-icon">
+          <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="producto-detalle">
+    <div class="producto-imagenes">
+      <div class="imagen-principal">
+        <img id="producto-img-main" src="" alt="Producto">
+      </div>
+    </div>
+    <div class="producto-info">
+      <h1 id="producto-nombre"></h1>
+      <p class="precio">$ <span id="producto-precio"></span> MXN</p>
+      
+      <div class="producto-descripcion">
+        <p id="producto-descripcion"></p>
+      </div>
+
+      <div class="cantidad-control">
+        <button onclick="decrementarCantidad()">-</button>
+        <input type="number" id="cantidad" value="1" min="1" max="10" readonly>
+        <button onclick="incrementarCantidad()">+</button>
+      </div>
+      
+      <button id="agregar-carrito" class="btn-principal">AGREGAR AL CARRITO</button>
+      <div id="sold-out" class="sold-out" style="display: none;">SOLD OUT</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/imagenes/BP.png" alt="Logo Baby Poleras" height="48"/>
+      </div>
+      <span class="dm-mono footer-copyright">© 2025 Baby Poleras</span>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/tienda.js"></script>
+  <script>
+    // Obtener el ID del producto de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productoId = parseInt(urlParams.get('id'));
+    
+    // Encontrar el producto
+    const producto = PRODUCTOS.find(p => p.id === productoId);
+    
+    if (producto) {
+      // Actualizar la información del producto
+      document.getElementById('producto-nombre').textContent = producto.nombre;
+      document.getElementById('producto-precio').textContent = producto.precio.toLocaleString('es-MX');
+      document.getElementById('producto-descripcion').textContent = producto.descripcion;
+      document.getElementById('producto-img-main').src = `assets/${producto.imagen}`;
+      
+      // Manejar estado de agotado
+      if (producto.soldOut) {
+        document.getElementById('agregar-carrito').style.display = 'none';
+        document.getElementById('sold-out').style.display = 'block';
+        document.querySelector('.cantidad-control').style.display = 'none';
+      }
+      
+      // Configurar el botón de agregar al carrito
+      document.getElementById('agregar-carrito').onclick = () => {
+        const cantidad = parseInt(document.getElementById('cantidad').value);
+        agregarAlCarrito(producto, cantidad);
+      };
+    } else {
+      // Redirigir a la tienda si no se encuentra el producto
+      window.location.href = 'tienda.html';
+    }
+  </script>
+</body>
+</html> 

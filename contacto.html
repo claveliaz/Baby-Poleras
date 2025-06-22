@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Baby Poleras</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="premium-bar">
+      <div class="logo-graphic">
+        <a href="index.html">
+          <img src="assets/imagenes/BP.png" alt="Logo Baby Poleras"/>
+        </a>
+      </div>
+      <div class="menu-central">
+        <a href="index.html" class="dm-mono">INICIO</a>
+        <a href="tienda.html" class="dm-mono">TIENDA</a>
+        <a href="contacto.html" class="dm-mono active">CONTÁCTANOS</a>
+      </div>
+      <div class="iconos-barra">
+        <span class="icon-search">
+          <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <a href="comprar.html" class="icon-cart" id="cart-icon">
+          <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="contacto-page">
+    <div class="contacto-container">
+      <form id="contactForm" class="contacto-formulario">
+        <h1 class="dm-mono">CONTACT</h1>
+        
+        <div class="form-grupo">
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="nombre">Your name</label>
+        </div>
+        
+        <div class="form-grupo">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Your email</label>
+        </div>
+        
+        <div class="form-grupo">
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <label for="mensaje">Your message</label>
+        </div>
+        
+        <button type="submit" class="btn-enviar">SEND MESSAGE</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/imagenes/BP.png" alt="Logo Baby Poleras" height="48"/>
+      </div>
+      <span class="dm-mono footer-copyright">© 2025 Baby Poleras</span>
+    </div>
+  </footer>
+  <script src="js/tienda.js"></script>
+</body>
+</html> 
