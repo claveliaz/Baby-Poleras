@@ -14,7 +14,7 @@ const PRODUCTOS = [
     {
         id: 2,
         nombre: "Polera Amiri Essential",
-        precio: 299,
+        precio: 270,
         descripcion: "Polera Amiri confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
         imagen: "imagenes/Amiri.jpeg",
         imagenes: [
@@ -32,7 +32,7 @@ const PRODUCTOS = [
             "imagenes/AWAKENINGS.jpeg",
         ],
         soldOut: false
-    }
+    },
     {
         id: 3,
         nombre: "Polera LA Azul",
@@ -43,7 +43,7 @@ const PRODUCTOS = [
             "imagenes/LA.jpeg",
         ],
         soldOut: false
-    }
+    },
     {
         id: 4,
         nombre: "Polera Básica ",
@@ -54,7 +54,7 @@ const PRODUCTOS = [
             "imagenes/LA.jpeg",
         ],
         soldOut: false
-    }
+    },
     {
         id: 5,
         nombre: "Polera Básica ",
@@ -65,7 +65,9 @@ const PRODUCTOS = [
             "imagenes/S.jpeg",
         ],
         soldOut: false
-        id: 5,
+    },
+    {
+        id: 6,
         nombre: "Polera Básica ",
         precio: 270,
         descripcion: "Polera Básica confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
