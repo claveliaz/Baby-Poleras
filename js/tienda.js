@@ -299,6 +299,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Inicializar el contador del carrito al cargar la página
   actualizarContadorCarrito();
+
+  // Lógica del menú hamburguesa
+  const hamburger = document.getElementById('hamburger-menu');
+  const menu = document.getElementById('menu-central');
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+  }
 });
 
 // Función para mostrar mensaje de éxito
@@ -470,6 +480,16 @@ function inicializarPaginaCarrito() {
 
 // --- INICIALIZACIÓN GENERAL ---
 document.addEventListener('DOMContentLoaded', () => {
+  // Lógica del menú hamburguesa
+  const hamburger = document.getElementById('hamburger-menu');
+  const menu = document.getElementById('menu-central');
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+  }
+
   // Lógica común para todas las páginas
   actualizarContadorCarrito();
 
