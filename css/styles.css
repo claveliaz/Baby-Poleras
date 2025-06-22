@@ -828,8 +828,7 @@ nav ul li a:hover,
 }
 
 .logo-graphic {
-  display: flex;
-  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-graphic a {
@@ -849,7 +848,9 @@ nav ul li a:hover,
 }
 
 .menu-central {
+  flex-grow: 1;
   display: flex;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -871,9 +872,7 @@ nav ul li a:hover,
 }
 
 .iconos-barra {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-shrink: 0;
 }
 
 .icon-search svg,
@@ -1129,8 +1128,7 @@ body {
 }
 
 .logo-graphic {
-  display: flex;
-  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-graphic a {
@@ -1148,7 +1146,9 @@ body {
 }
 
 .menu-central {
+  flex-grow: 1;
   display: flex;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -1170,9 +1170,7 @@ body {
 }
 
 .iconos-barra {
-  display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-shrink: 0;
 }
 
 .icon-search svg,
@@ -1939,36 +1937,18 @@ main {
 }
 
 .menu-central {
-  display: none; /* Ocultamos el menú normal */
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0,0.95);
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Visible por defecto en escritorio */
   gap: 32px;
-  z-index: 100;
-}
-
-.menu-central.active {
-  display: flex; /* Mostramos el menú al hacer clic */
-}
-
-.menu-central a {
-  font-size: 2em;
+  align-items: center;
 }
 
 .hamburger-menu {
-  display: flex; /* Mostramos el icono de hamburguesa */
-  flex-direction: column;
-  gap: 5px;
+  display: none; /* Oculto por defecto en escritorio */
   cursor: pointer;
   background: none;
   border: none;
-  z-index: 101;
+  z-index: 1001;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger-menu span {
@@ -1997,4 +1977,36 @@ main {
 .productos-grid {
   grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
   gap: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .premium-bar .menu-central {
+    display: none; /* Oculta el menú de texto en móvil */
+  }
+
+  .hamburger-menu {
+    display: block; /* Muestra el icono de hamburguesa en móvil */
+  }
+
+  .menu-central {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .menu-central.active {
+    display: flex; /* Muestra el menú lateral al hacer clic */
+    left: 0;
+  }
 } 

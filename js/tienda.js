@@ -309,6 +309,10 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.classList.toggle('active');
     });
   }
+
+  if (document.body.id === 'page-comprar') {
+    inicializarPaginaCarrito();
+  }
 });
 
 // Función para mostrar mensaje de éxito
@@ -511,5 +515,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.carrito-page')) {
     // Para comprar.html (página del carrito)
     inicializarPaginaCarrito();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const menuCentral = document.getElementById('menu-central');
+
+  if (hamburgerMenu && menuCentral) {
+    hamburgerMenu.addEventListener('click', () => {
+      menuCentral.classList.toggle('active');
+      hamburgerMenu.classList.toggle('active');
+    });
   }
 }); 
