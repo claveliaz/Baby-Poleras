@@ -3,13 +3,11 @@ const PRODUCTOS = [
     {
         id: 1,
         nombre: "Polera Palms Angels",
-        precio: 299,
-        descripcion: "Polera negra de algodón 100% premium con diseño exclusivo de Palms Angels. Corte regular fit con cuello redondo. Ideal para cualquier ocasión.",
+        precio: 270,
+        descripcion: "Polera Palms Angels de algodón 100% premium con diseño exclusivo de Palms Angels. Corte regular fit con cuello redondo. Ideal para cualquier ocasión.",
         imagen: "imagenes/Palms Angels.jpeg",
         imagenes: [
             "imagenes/Palms Angels.jpeg",
-            "imagenes/S.jpeg",
-            "imagenes/LA.jpeg"
         ],
         soldOut: false
     },
@@ -21,41 +19,60 @@ const PRODUCTOS = [
         imagen: "imagenes/Amiri.jpeg",
         imagenes: [
             "imagenes/Amiri.jpeg",
-            "imagenes/AWAKENINGS.jpeg",
-            "imagenes/A.jpeg"
         ],
         soldOut: false
     },
     {
         id: 3,
-        nombre: "Playera Básica Azul",
+        nombre: "Polera Awakenings",
         precio: 270,
-        descripcion: "Playera básica de algodón 100% en color azul. Corte regular fit. Cuello redondo. Manga corta.",
-        imagen: "imagenes/Palms Angels.jpeg",
-        soldOut: true
-    },
+        descripcion: "Polera Awakenings confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
+        imagen: "imagenes/AWAKENINGS.jpeg",
+        imagenes: [
+            "imagenes/AWAKENINGS.jpeg",
+        ],
+        soldOut: false
+    }
+    {
+        id: 3,
+        nombre: "Polera LA Azul",
+        precio: 270,
+        descripcion: "Polera Azulconfeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
+        imagen: "imagenes/LA.jpeg",
+        imagenes: [
+            "imagenes/LA.jpeg",
+        ],
+        soldOut: false
+    }
     {
         id: 4,
-        nombre: 'Playera Básica',
-        precio: 270.00,
-        imagen: 'imagenes/LA.jpeg',
-        descripcion: 'Playera oversize color arena, estilo urbano.',
+        nombre: "Polera Básica ",
+        precio: 270,
+        descripcion: "Polera Básica confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
+        imagen: "imagenes/LA.jpeg",
+        imagenes: [
+            "imagenes/LA.jpeg",
+        ],
         soldOut: false
-    },
+    }
     {
         id: 5,
-        nombre: 'Playera Básica',
-        precio: 270.00,
-        imagen: 'imagenes/S.jpeg',
-        descripcion: 'Playera negra con estampado exclusivo Baby Poleras.',
+        nombre: "Polera Básica ",
+        precio: 270,
+        descripcion: "Polera Básica confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
+        imagen: "imagenes/S.jpeg",
+        imagenes: [
+            "imagenes/S.jpeg",
+        ],
         soldOut: false
-    },
-    {
-        id: 6,
-        nombre: 'Playera Bordada',
-        precio: 270.00,
-        imagen: 'imagenes/A.jpeg',
-        descripcion: 'Playera blanca con logo bordado en el pecho.',
+        id: 5,
+        nombre: "Polera Básica ",
+        precio: 270,
+        descripcion: "Polera Básica confeccionada en algodón peinado de alta calidad. Diseño minimalista perfecto para tu día a día.",
+        imagen: "imagenes/A.jpeg",
+        imagenes: [
+            "imagenes/A.jpeg",
+        ],
         soldOut: false
     }
 ];
