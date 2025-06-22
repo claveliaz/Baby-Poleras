@@ -46,7 +46,7 @@ function renderProductos(productos) {
     
     // Precio
     const precio = document.createElement('p');
-    precio.textContent = `$ ${producto.precio.toLocaleString('es-MX')} MXN`;
+    precio.textContent = `$${producto.precio.toLocaleString('es-MX')} MXN`;
     precio.className = 'neue-plank-bold';
     card.appendChild(precio);
     
@@ -73,7 +73,7 @@ function inicializarPaginaProducto() {
   // Actualizar elementos del DOM
   document.getElementById('producto-img-main').src = `assets/${producto.imagen}`;
   document.getElementById('producto-nombre').textContent = producto.nombre;
-  document.getElementById('producto-precio').textContent = `$ ${producto.precio.toLocaleString('es-MX')} MXN`;
+  document.getElementById('producto-precio').textContent = `$${producto.precio.toLocaleString('es-MX')} MXN`;
   
   // Configurar miniaturas
   const miniaturas = document.getElementById('producto-miniaturas');
