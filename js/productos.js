@@ -28,6 +28,14 @@ const PRODUCTOS = [
     },
     {
         id: 3,
+        nombre: "Playera Básica Azul",
+        precio: 270,
+        descripcion: "Playera básica de algodón 100% en color azul. Corte regular fit. Cuello redondo. Manga corta.",
+        imagen: "imagenes/Palms Angels.jpeg",
+        soldOut: true
+    },
+    {
+        id: 4,
         nombre: 'Playera Básica',
         precio: 270.00,
         imagen: 'imagenes/LA.jpeg',
@@ -35,7 +43,7 @@ const PRODUCTOS = [
         soldOut: false
     },
     {
-        id: 4,
+        id: 5,
         nombre: 'Playera Básica',
         precio: 270.00,
         imagen: 'imagenes/S.jpeg',
@@ -43,28 +51,12 @@ const PRODUCTOS = [
         soldOut: false
     },
     {
-        id: 5,
+        id: 6,
         nombre: 'Playera Bordada',
         precio: 270.00,
         imagen: 'imagenes/A.jpeg',
         descripcion: 'Playera blanca con logo bordado en el pecho.',
         soldOut: false
-    },
-    {
-        id: 6,
-        nombre: 'Playera Básica',
-        precio: 270.00,
-        imagen: 'imagenes/S.jpeg',
-        descripcion: 'Playera tie dye edición limitada, colores vibrantes.',
-        soldOut: false
-    },
-    {
-        id: 7,
-        nombre: 'Playera Básica Azul',
-        precio: 270,
-        descripcion: "Playera básica de algodón 100% en color azul. Corte regular fit. Cuello redondo. Manga corta.",
-        imagen: "imagenes/Palms Angels.jpeg",
-        soldOut: true
     }
 ];
 
