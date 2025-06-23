@@ -2819,4 +2819,12 @@ main {
   .menu-central a:hover {
     background: rgba(255, 255, 255, 0.1);
   }
+}
+
+@media (max-width: 768px) {
+  .producto-card {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
 } 
