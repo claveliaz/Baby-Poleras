@@ -1987,6 +1987,8 @@ main {
 
   .hamburger-menu {
     display: block; /* Muestra el icono de hamburguesa en móvil */
+    position: relative; /* Necesario para el z-index */
+    z-index: 1001; /* Por encima del menú overlay */
   }
 
   .menu-central {
@@ -2008,5 +2010,11 @@ main {
   .menu-central.active {
     display: flex; /* Muestra el menú lateral al hacer clic */
     left: 0;
+  }
+
+  .iconos-barra {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
 } 
