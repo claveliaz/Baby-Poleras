@@ -1,19 +1,18 @@
 // Lógica unificada para index.html y comprar.html
 
-// Elementos del DOM
-const productosGrid = document.getElementById('productos-grid');
-const ordenSelect = document.querySelector('.orden-select');
-const cartIcon = document.getElementById('cart-icon');
-const cartCount = document.getElementById('cart-count');
-const carritoSection = document.getElementById('carrito');
-const carritoItems = document.getElementById('carrito-items');
-const carritoTotal = document.getElementById('carrito-total');
-const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
-const menuCentral = document.getElementById('menu-central');
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const closeMenuBtn = document.getElementById('close-menu-btn');
-
 document.addEventListener('DOMContentLoaded', () => {
+  // Mover la inicialización de elementos del DOM aquí
+  const productosGrid = document.getElementById('productos-grid');
+  const ordenSelect = document.querySelector('.orden-select');
+  const cartIcon = document.getElementById('cart-icon');
+  const cartCount = document.getElementById('cart-count');
+  const carritoSection = document.getElementById('carrito');
+  const carritoItems = document.getElementById('carrito-items');
+  const carritoTotal = document.getElementById('carrito-total');
+  const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
+  const menuCentral = document.getElementById('menu-central');
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const closeMenuBtn = document.getElementById('close-menu-btn');
 
   // Lógica del menú hamburguesa
   if (hamburgerMenu && menuCentral && closeMenuBtn) {
@@ -28,14 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Renderizar productos en páginas que lo necesiten
+  if (productosGrid) {
+    renderProductos(PRODUCTOS);
+  }
+
   // Lógica del carrito de compras (debe estar después de la del menú)
   const carritoContainer = document.getElementById('carrito-container');
   const carritoLista = document.getElementById('carrito-lista');
-  const carritoTotal = document.getElementById('carrito-total');
-  const cerrarCarritoBtn = document.getElementById('cerrar-carrito');
-  const menuCentral = document.getElementById('menu-central');
-  const hamburgerMenu = document.getElementById('hamburger-menu');
-  const closeMenuBtn = document.getElementById('close-menu-btn');
   
   // Inicializar carrito desde localStorage
   let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
