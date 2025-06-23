@@ -2138,4 +2138,685 @@ main {
   main {
     padding-top: 60px;
   }
+}
+
+/* Estilos para la sección de Misión y Valores */
+.mision-valores-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  padding: 80px 32px;
+  margin: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mision-valores-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mision-valores-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.mision-valores-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-mision-valores {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 18px 36px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: 'DM Mono', monospace;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.btn-mision-valores:hover {
+  background: transparent;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .mision-valores-section {
+    padding: 60px 20px;
+    margin: 40px 0;
+  }
+  
+  .mision-valores-content h2 {
+    font-size: 2em;
+  }
+  
+  .mision-valores-content p {
+    font-size: 1.1em;
+  }
+  
+  .btn-mision-valores {
+    padding: 15px 30px;
+    font-size: 1em;
+  }
+}
+
+/* Mejoras de compatibilidad móvil - Breakpoints optimizados */
+@media (max-width: 1024px) {
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .producto-card h3 {
+    font-size: 0.9em;
+  }
+  
+  .producto-card p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header y navegación mejorados */
+  .premium-bar {
+    padding: 12px 16px;
+    height: 60px;
+  }
+  
+  .logo-graphic img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .menu-central {
+    display: none;
+  }
+  
+  .menu-central.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.98);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    gap: 40px;
+  }
+  
+  .menu-central.active a {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-central.active a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .hamburger-menu {
+    display: block;
+    z-index: 1001;
+    position: relative;
+  }
+  
+  .close-menu-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconos-barra {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .iconos-barra .icon-search,
+  .iconos-barra .icon-cart {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Hero section optimizado */
+  .hero-img {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Productos grid optimizado */
+  .productos-section {
+    padding: 40px 16px;
+  }
+  
+  .productos-section h1 {
+    font-size: 1.8em;
+    margin: 32px 0 24px 0;
+    letter-spacing: 1.5px;
+  }
+  
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .producto-card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .producto-card h3 {
+    font-size: 0.85em;
+    margin: 8px 0 4px 0;
+    line-height: 1.3;
+  }
+  
+  .producto-card p {
+    font-size: 0.75em;
+    margin: 4px 0 12px 0;
+  }
+  
+  .producto-card button {
+    padding: 8px 12px;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+  }
+  
+  /* Carrito optimizado */
+  .carrito-section {
+    width: 100%;
+    top: 60px;
+    height: calc(100vh - 60px);
+    padding: 20px;
+  }
+  
+  .carrito-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .carrito-item {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .carrito-item-info img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .carrito-item-detalles h3 {
+    font-size: 0.9em;
+  }
+  
+  .carrito-item-detalles p {
+    font-size: 0.8em;
+  }
+  
+  .carrito-total {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  #cerrar-carrito {
+    padding: 12px 24px;
+    font-size: 0.9em;
+  }
+  
+  /* Misión y valores optimizado */
+  .mision-valores-section {
+    padding: 40px 20px;
+    margin: 40px 0;
+  }
+  
+  .mision-valores-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+  }
+  
+  .mision-valores-content p {
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+  
+  .btn-mision-valores {
+    padding: 14px 28px;
+    font-size: 0.9em;
+  }
+  
+  /* Footer optimizado */
+  .footer-content {
+    padding: 20px 16px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    height: 50px;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8em;
+  }
+  
+  /* Selector de orden optimizado */
+  .orden-select {
+    font-size: 0.8em;
+    padding: 8px 12px;
+    max-width: 120px;
+  }
+  
+  /* Main padding ajustado */
+  main {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Optimizaciones para pantallas muy pequeñas */
+  .premium-bar {
+    padding: 10px 12px;
+    height: 55px;
+  }
+  
+  .logo-graphic img {
+    height: 35px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .productos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .producto-card h3 {
+    font-size: 0.9em;
+  }
+  
+  .producto-card p {
+    font-size: 0.8em;
+  }
+  
+  .producto-card button {
+    padding: 10px 16px;
+    font-size: 0.75em;
+  }
+  
+  .productos-section h1 {
+    font-size: 1.6em;
+  }
+  
+  .mision-valores-content h2 {
+    font-size: 1.6em;
+  }
+  
+  .btn-mision-valores {
+    padding: 12px 24px;
+    font-size: 0.85em;
+  }
+  
+  .carrito-section {
+    padding: 16px;
+  }
+  
+  .carrito-item {
+    padding: 10px;
+  }
+  
+  .carrito-item-info img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .iconos-barra {
+    gap: 8px;
+  }
+  
+  .iconos-barra .icon-search,
+  .iconos-barra .icon-cart {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Mejoras para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .productos-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  
+  .producto-detalle {
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .producto-info h1 {
+    font-size: 2.2em;
+  }
+}
+
+/* Optimizaciones de rendimiento móvil */
+@media (max-width: 768px) {
+  /* Reducir animaciones en móviles para mejor rendimiento */
+  .producto-card {
+    animation: none;
+  }
+  
+  .producto-card:hover {
+    transform: none;
+  }
+  
+  /* Mejorar la legibilidad del texto */
+  body {
+    font-size: 16px; /* Prevenir zoom automático en iOS */
+  }
+  
+  /* Optimizar imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mejorar el scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Optimizar botones para touch */
+  button, 
+  .btn-mision-valores,
+  .btn-volver,
+  .btn-principal,
+  .btn-enviar {
+    min-height: 44px; /* Tamaño mínimo recomendado para touch */
+    touch-action: manipulation;
+  }
+  
+  /* Mejorar la accesibilidad del menú */
+  .hamburger-menu {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .close-menu-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  /* Mejoras para el menú hamburguesa */
+  .hamburger-menu span {
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-menu.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  /* Mejoras para el carrito en móviles */
+  .carrito-section:not(.hidden) {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 999;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Mejoras para formularios en móviles */
+  .form-grupo input,
+  .form-grupo textarea {
+    font-size: 16px; /* Prevenir zoom en iOS */
+  }
+  
+  /* Mejoras para botones de cantidad */
+  .cantidad-control button {
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.2em;
+  }
+  
+  /* Mejoras para el selector de orden */
+  .orden-select {
+    min-height: 44px;
+    font-size: 14px;
+  }
+  
+  /* Mejoras para el footer */
+  .footer-content {
+    padding: 20px 16px;
+  }
+  
+  /* Mejoras para la sección de misión y valores */
+  .mision-valores-section {
+    margin: 30px 0;
+  }
+  
+  /* Mejoras para el hero */
+  .hero-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Mejoras para productos */
+  .producto-card-img-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .producto-card-img-wrap img {
+    transition: transform 0.3s ease;
+  }
+  
+  .producto-card-img-wrap:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Mejoras para el logo */
+  .logo-graphic img {
+    transition: transform 0.2s ease;
+  }
+  
+  .logo-graphic:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Mejoras para iconos */
+  .iconos-barra svg {
+    transition: opacity 0.2s ease;
+  }
+  
+  .iconos-barra svg:hover {
+    opacity: 0.8;
+  }
+  
+  /* Mejoras para el scroll */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Mejoras específicas para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  .premium-bar {
+    padding: 8px 10px;
+    height: 50px;
+  }
+  
+  .logo-graphic img {
+    height: 30px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .productos-section h1 {
+    font-size: 1.4em;
+  }
+  
+  .mision-valores-content h2 {
+    font-size: 1.4em;
+  }
+  
+  .btn-mision-valores {
+    padding: 10px 20px;
+    font-size: 0.8em;
+  }
+  
+  .iconos-barra {
+    gap: 6px;
+  }
+  
+  .iconos-barra .icon-search,
+  .iconos-barra .icon-cart {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Mejoras para tablets en modo landscape */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .hero-img {
+    height: 50vh;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .productos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Mejoras para dispositivos con notch */
+@supports (padding: max(0px)) {
+  .premium-bar {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+  
+  .carrito-section {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  
+  .footer-content {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+}
+
+/* Mejoras para modo oscuro del sistema */
+@media (prefers-color-scheme: dark) {
+  /* El sitio ya está optimizado para modo oscuro */
+}
+
+/* Mejoras para dispositivos de alta densidad */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-graphic img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Mejoras para dispositivos con pantalla táctil */
+@media (hover: none) and (pointer: coarse) {
+  .producto-card:hover {
+    transform: none;
+  }
+  
+  .btn-mision-valores:hover {
+    transform: none;
+  }
+  
+  .menu-central a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
 } 

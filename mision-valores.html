@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Misión y Valores | Baby Poleras</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .mision-valores-container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 32px;
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+    
+    .mision-valores-container h1 {
+      font-family: 'DM Mono', monospace;
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 60px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    
+    .mision-section, .vision-section {
+      margin-bottom: 60px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .mision-section h2, .vision-section h2 {
+      font-family: 'Neue Plak', Arial, sans-serif;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #fff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .mision-section p, .vision-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+    
+    .vision-section p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .btn-volver {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: 'DM Mono', monospace;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      margin-top: 40px;
+    }
+    
+    .btn-volver:hover {
+      background: #e0e0e0;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .mision-valores-container {
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      
+      .mision-valores-container h1 {
+        font-size: 2em;
+        margin-bottom: 40px;
+      }
+      
+      .mision-section, .vision-section {
+        padding: 30px 20px;
+        margin-bottom: 40px;
+      }
+      
+      .mision-section h2, .vision-section h2 {
+        font-size: 1.5em;
+      }
+      
+      .mision-section p, .vision-section p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="premium-bar">
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="logo-graphic">
+        <a href="index.html">
+          <img src="assets/imagenes/BP.png" alt="Logo Baby Poleras"/>
+        </a>
+      </div>
+      <div class="menu-central" id="menu-central">
+        <button class="close-menu-btn" id="close-menu-btn">&times;</button>
+        <a href="index.html" class="dm-mono">INICIO</a>
+        <a href="tienda.html" class="dm-mono">TIENDA</a>
+        <a href="contacto.html" class="dm-mono">CONTÁCTANOS</a>
+      </div>
+      <div class="iconos-barra">
+        <span class="icon-search">
+          <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <a href="comprar.html" class="icon-cart" id="cart-icon">
+          <svg width="20" height="20" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="mision-valores-container">
+      <h1 class="dm-mono">Misión y Valores</h1>
+      
+      <div class="mision-section">
+        <h2>Misión</h2>
+        <p>Ser la tienda en línea de camisas más confiable y estilo para hombres y mujeres.</p>
+        <p>Ofreciendo diseño exclusivo y calidad superior, inspirando a nuestros cliente.</p>
+        <p>Expresar su estilo único y sentirse seguros de sí mismos en cada ocasión.</p>
+      </div>
+      
+      <div class="vision-section">
+        <h2>Visión</h2>
+        <p>Nuestra misión es proporcionar camisas de alta calidad, diseñadas con un enfoque en la comodidad, la durabilidad y la moda.</p>
+        <p>Nos comprometemos a ofrecer una experiencia de compra en línea excepcional, con un servicio al cliente excelente y opciones de envío rápidas y seguras.</p>
+        <p>Queremos que cada cliente encuentre en nuestras camisas la perfecta combinación de estilo y confort, haciéndolos sentir únicos y confiados.</p>
+      </div>
+      
+      <div style="text-align: center;">
+        <a href="index.html" class="btn-volver">Volver al Inicio</a>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="assets/imagenes/BP.png" alt="Logo Baby Poleras" height="72"/>
+      </div>
+      <span class="dm-mono footer-copyright">© 2025 Baby Poleras</span>
+    </div>
+  </footer>
+  
+  <script src="js/mobile.js"></script>
+  <script>
+    // Menú hamburguesa para móviles
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const menuCentral = document.getElementById('menu-central');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    
+    hamburgerMenu.addEventListener('click', () => {
+      menuCentral.classList.add('active');
+    });
+    
+    closeMenuBtn.addEventListener('click', () => {
+      menuCentral.classList.remove('active');
+    });
+    
+    // Cerrar menú al hacer clic en un enlace
+    const menuLinks = menuCentral.querySelectorAll('a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menuCentral.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html> 
