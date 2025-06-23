@@ -941,6 +941,17 @@ main {
   .premium-bar {
     padding: 0 16px;
     height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .premium-bar .logo-graphic {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1002;
   }
 
   .logo-graphic img {
@@ -950,9 +961,74 @@ main {
   .menu-central {
     display: none;
   }
+  
+  .menu-central.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .close-menu-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 1001;
+    position: relative;
+  }
 
   .iconos-barra {
-    gap: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+  }
+
+  .iconos-barra .icon-search,
+  .iconos-barra .icon-cart {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+
+  .icon-search:hover svg,
+  .icon-cart:hover svg {
+    opacity: 1;
+  }
+
+  .productos-section {
+    padding: 64px 16px;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .carrito-section {
+    width: 100%;
+    top: 60px;
+    height: calc(100vh - 60px);
   }
 
   main {
@@ -2023,6 +2099,13 @@ main {
     z-index: 1001;
   }
 
+  .iconos-barra {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+  }
+
   .iconos-barra .icon-search,
   .iconos-barra .icon-cart {
     width: 20px;
@@ -2035,5 +2118,24 @@ main {
   .icon-search:hover svg,
   .icon-cart:hover svg {
     opacity: 1;
+  }
+
+  .productos-section {
+    padding: 64px 16px;
+  }
+
+  .productos-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .carrito-section {
+    width: 100%;
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+
+  main {
+    padding-top: 60px;
   }
 } 
