@@ -430,41 +430,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- INICIALIZACIÓN GENERAL ---
-  document.addEventListener('DOMContentLoaded', () => {
-    // Lógica del menú hamburguesa
-    if (hamburgerMenu && menuCentral && closeMenuBtn) {
-      hamburgerMenu.addEventListener('click', () => {
-        menuCentral.classList.toggle('active');
-        hamburgerMenu.classList.toggle('active');
-      });
+  // Lógica del menú hamburguesa
+  if (hamburgerMenu && menuCentral && closeMenuBtn) {
+    hamburgerMenu.addEventListener('click', () => {
+      menuCentral.classList.toggle('active');
+      hamburgerMenu.classList.toggle('active');
+    });
 
-      closeMenuBtn.addEventListener('click', () => {
-        menuCentral.classList.remove('active');
-        hamburgerMenu.classList.remove('active');
-      });
-    }
+    closeMenuBtn.addEventListener('click', () => {
+      menuCentral.classList.remove('active');
+      hamburgerMenu.classList.remove('active');
+    });
+  }
 
-    // Lógica común para todas las páginas
-    actualizarContadorCarrito();
+  // Lógica común para todas las páginas
+  actualizarContadorCarrito();
 
-    // Lógica específica por página
-    if (document.querySelector('.productos-grid')) {
-      // Para index.html y tienda.html
-      const productosAMostrar = document.body.id === 'page-index' ? PRODUCTOS.slice(0, 4) : PRODUCTOS;
-      renderProductos(productosAMostrar);
-      if(ordenSelect) {
-        ordenSelect.addEventListener('change', (e) => ordenarProductos(e.target.value));
-      }
+  // Lógica específica por página
+  if (document.querySelector('.productos-grid')) {
+    // Para index.html y tienda.html
+    const productosAMostrar = document.body.id === 'page-index' ? PRODUCTOS.slice(0, 4) : PRODUCTOS;
+    renderProductos(productosAMostrar);
+    if(ordenSelect) {
+      ordenSelect.addEventListener('change', (e) => ordenarProductos(e.target.value));
     }
+  }
 
-    if (document.querySelector('.producto-detalle')) {
-      // Para producto.html
-      inicializarPaginaProducto();
-    }
-    
-    if (document.querySelector('.carrito-page')) {
-      // Para comprar.html (página del carrito)
-      inicializarPaginaCarrito();
-    }
-  });
+  if (document.querySelector('.producto-detalle')) {
+    // Para producto.html
+    inicializarPaginaProducto();
+  }
+  
+  if (document.querySelector('.carrito-page')) {
+    // Para comprar.html (página del carrito)
+    inicializarPaginaCarrito();
+  }
 }); 
