@@ -2,12 +2,12 @@
 const PRODUCTOS = [
     {
         id: 1,
-        nombre: "Polera Palms Angels",
+        nombre: "Polera Básica",
         precio: 270,
-        descripcion: "Polera Palms Angels de algodón 100% premium con diseño exclusivo de Palms Angels. Corte regular fit con cuello redondo. Ideal para cualquier ocasión.",
-        imagen: "imagenes/Palms Angels.jpeg",
+        descripcion: "Polera Básica negra de algodón 100% premium con diseño exclusivo de Jordan “Jacaranda”. Corte regular fit con cuello redondo. Ideal para cualquier ocasión.",
+        imagen: "imagenes/jordan1.jpg",
         imagenes: [
-            "imagenes/Palms Angels.jpeg",
+            "imagenes/jordan1.jpg",
         ],
         soldOut: false
     },
@@ -65,6 +65,19 @@ const PRODUCTOS = [
             "imagenes/A.jpeg",
         ],
         soldOut: false
+    
+    },
+    {
+        id: 7,
+        nombre: "Polera Palms Angels",
+        precio: 270,
+        descripcion: "Polera Palms Angels de algodón 100% premium con diseño exclusivo de Palms Angels. Corte regular fit con cuello redondo. Ideal para cualquier ocasión.",
+        imagen: "imagenes/Palms Angels.jpeg",
+        imagenes: [
+            "imagenes/Palms Angels.jpeg",
+        ],
+        soldOut: false
+    
     }
 ];
 
